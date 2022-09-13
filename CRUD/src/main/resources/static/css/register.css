@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/* RESET CSS */
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: #f5f5f5;
+    color: fff;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+} 
+
+main{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-bottom: 1.6rem;
+}
+
+.social-media {
+   display: flex;
+   flex-wrap: nowrap;
+   text-decoration: none;
+}
+
+.btn-google{
+    width: 150px;
+    height: 50px;
+    border-radius: 40px 0px 0px 40px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.btn-facebook{
+    width: 150px;
+    height: 50px;
+    background:#3b5998;
+    border-radius: 0px 40px 40px 0px;
+    cursor: pointer;
+}
+
+.btn-facebook i {
+    color: #fff;
+}
+
+.btn-google i {
+    color: #000;
+}
+
+.btn-google span{
+ color: #212121;
+ margin-left: 8px;
+}
+
+.btn-facebook span{
+    color: #fff;
+    margin-left: 8px;
+   }
+
+   .social-media a{
+    text-decoration: none;
+}
+
+.social-media a:hover{
+    text-decoration: none;
+}
+
+.social-media img{
+    width: 36px;
+    margin-left: 3rem;
+}
+
+
+.alternative{
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+
+.alt-subtitle span {
+    font-size: 14px;
+}
+
+.alt-subtitle {
+    position: relative;
+    display: inline-block;
+    color: #797A7E;
+    font-size: 13px;
+    margin: 15px;
+    font-weight: 500;
+  }
+  .alt-subtitle::before,
+  .alt-subtitle::after {
+    content: "";
+    position: absolute;
+    top: 0.65em;
+    width: 4em;
+    height: 0.09em;
+    background-color: #797A7E;
+    left: -5em;
+  }
+  .alt-subtitle::after {
+    left: initial;
+    right: -5em;
+  }
+
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form label{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+main form label[for="password"]{
+    margin-top: 1.8rem;
+}
+
+main form input[type="email"]{
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 48px;
+    padding: 20px;
+    margin-top: 0.5rem;
+    outline: none;
+    font-size: 0.9rem;
+    border:2px solid #797A7E;
+    color: #000;
+    border-radius: 30px;
+}
+
+main form input[type="password"] {
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 48px;
+    padding: 20px;
+    margin-top: 0.5rem;
+    outline: none;
+    font-size: 0.9rem;
+    border:2px solid #797A7E;
+    color: #000;
+    border-radius: 30px;
+}
+
+main form .forgot {
+    text-decoration: none;
+}
+
+.field-checkbox input {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px; 
+    box-shadow: unset;
+    min-height: unset;
+}
+
+
+.login input[type="submit"]{
+    width: 300px;
+    height: 48px;
+    border-radius: 40px;
+    cursor: pointer;
+    background: #000;
+    box-shadow: 0 8px 28px rgba(66, 66, 66, 0.45);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.login input:hover{
+    width: 300px;
+    height: 48px;
+    background: #223BC9;
+    box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
+    border: none;
+}
+
+
+.sign-txt{
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.sign-txt a{
+    color: white;  
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.signup-link{
+    color: #797A7E;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .signup-link a{
+    font-weight: 700;
+    color: #223BC9;
+    text-decoration: none;
+  }
+
+ .signup-link a:hover{
+    text-decoration: underline;
+  }
+
+ .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 0 25px 0;
+}
+
+.checkbox-text a.text {
+    color: #223BC9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.checkbox-text a.text:hover {
+text-decoration: underline;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #223BC9;
+}
+
+main .text{
+    color: #333;
+    font-size: 12px;   
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+/*input text*/
+main form input[type="text"] {
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 48px;
+    padding: 20px;
+    margin-top: 0.5rem;
+    outline: none;
+    font-size: 0.9rem;
+    border:2px solid #797A7E;
+    color: #000;
+    border-radius: 30px;
+}
+
+/*error form p*/
+.error-validation {
+    color: #FF0000;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 10px;
+}

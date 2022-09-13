@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container text-center">
+		<div>
+			<h1>Cadastro de Usuário</h1>
+		</div>
+		
+		<form th:action="@{/process_register}" method="post"
+			style="max-width: 600px; margin: 0 auto;"
+			th:object="${user}"
+			>
+			<div class="m-3">
+				<div class="form-group row">
+					<label class="col-form-label col-4">E-mail</label>
+					<div class="col-8">
+						<input type="email" class="form-control" th:field="*{email}" required />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label class="col-form-label col-4">Senha</label>
+					<div class="col-8">
+						<input type="password" class="form-control" th:field="*{password}" required
+						minlength="6" maxlength="10" />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label class="col-form-label col-4">Nome</label>
+					<div class="col-8">
+						<input type="text" class="form-control" th:field="*{firstName}" required
+						minlength="2" maxlength="20" />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label class="col-form-label col-4">Sobrenome</label>
+					<div class="col-8">
+						<input type="text" class="form-control" th:field="*{lastName}" required
+						minlength="2" maxlength="20" />
+					</div>
+				</div>
+				
+				<div>
+					<button type="submit" class="btn btn-primary">Inscrever-se</button>
+				</div>
+				
+			</div>
+		</form>
+		
+	</div>
+</body>
+</html>
